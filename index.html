@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ivan's Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+      
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/
+    css/bootstrap.min.css" integrity="
+    sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWGmkzs7"
+    crossorigin="anonymous">
+
+    </head>
+    <body>
+        <header>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Ivan Raychev</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro"> junior front-end developer</p>
+            <img src="Images/Me-2.jpg" alt="a picture of Ivan" class="intro__img">
+        </section>
+        
+        
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>HTML</h3>
+                    <p>HTML is the first programming language that I learnt,
+                         and therefore the one I have the most experience with for now..
+                         I'm currently enrolled on a self funded IT course to help me acquire the skills I need to succeed as an IT professional.</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>CSS</h3>
+                    <p>CSS is my favourite language... even if it can be very frustating at times!
+                         My background in design has helped me to understand what I want my page design to look like,
+                          and my knowledge of CSS allows me to execute my vision.</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>JavaScript</h3>
+                    <p>Functionality is everything with a website, and JavaScript is the language I'm learning the most at the moment.
+                         It's a lot to take in, but every week I'm getting stronger at understanding new methods to solve my problems with JavaScript.</p>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
+            
+            <a href="#work" class="btn">My Work</a>
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Designer & developer based in Gatwick</p>
+           
+           <div class="about-me__body">
+               <p>Hi! My name is Ivan Raychev. I am a Front end developer,
+                  and I'm very passionate and dedicated to my work and always open to learning new technologies and frameworks.
+                  I am an ambitious and exceptionally organized person who is recognized for the ability to communicate effectively,
+                  work as part of a team and solve problems creatively.</p>
+           </div>
+           
+           <img src="Images/vanjo.jpg" alt="Ivan" class="about-me__img">
+        </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item -->
+                <a href="portfolio-item.html" target="_blank" class="portfolio__item">
+                    <img src="Images/camera-2.jpg" alt="" class="portfolio__img">
+                </a>
+                </div>
+
+                <div class="portfolio">
+                    <!-- Portfolio item -->
+                    <a href="portfolio-item1.html" target="_blank" class="portfolio__item">
+                        <img src="Images/bread-2.jpg" alt="" class="portfolio__img">
+                    </a>
+                    </div>
+
+                    <div class="portfolio">
+                        <!-- Portfolio item -->
+                        <a href="portfolio-item2.html" target="_blank" class="portfolio__item">
+                            <img src="Images/knowledge.jpeg" alt="" class="portfolio__img">
+                        </a>
+                        </div>
+                        <div style="text-align:center;">
+                        <a href="Ivan's CV.doc" class="btn">My CV</a>
+                        </div>
+        </section>
+
+       
+    
+
+        <section class="contact" id="contact">
+            <h3>Contact</h3>
+            <form action="contact.php" method="post" >
+                <label for="tname">Name</label>
+                <input type="text" name="name"  required placeholder=""/>
+                <br>
+                <label for="email_form">Email</label>
+                <input type="email" name="email"  required placeholder=""/>
+                <br>
+                <label for="message_form">Message</label><br>
+                <textarea name="message" cols="30" rows="10" placeholder="Enter your message here ..." required> </textarea>
+                <div class="center">
+                    <input type="submit" name="save" value="Submit">
+        </div>
+            </form>	
+        </section>>
+
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:ivraychev@yahoo.com" class="footer__link">ivraychev@yahoo.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.com" target="_blank">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="http://dribbble.com" target="_blank">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/ivan-raychev-37157a61/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/ivraychev" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>

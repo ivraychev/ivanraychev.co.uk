@@ -1,0 +1,358 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Custom Properties, update these for your own design */
+
+:root {
+  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Source Code Pro", monospace;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --clr-accent: #16e0bd;
+
+  --fs-h1: 2.5rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 6.0rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+  }
+}
+main {
+  width: 80%;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(193, 229, 243);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+
+
+#landing {
+  background-color: #16e0bd;
+  background-image: url(../Images/photo-camera-2.jpg);
+  background-size: cover;
+}
+
+@media (min-width: 700px) {
+h1 {
+  font-size: 5.0rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: auto;
+  color: rgb(255, 0, 13);
+  padding-top: 2am;
+  overflow: hidden;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  margin: 0%;
+  color: black;
+  padding-top: 2am;
+}
+
+#landingtext {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+
+  text-align: center;
+}
+#fix {
+  position: fixed;
+  margin: -100px;
+  top: 300px;
+  left: 5%;
+}
+@media (min-width: 600px) {
+#main-menu .nav-bar {
+  list-style: none;
+  margin-top: 40px;
+  text-align: right;
+}
+#main-menu .nav-bar li {
+  display: inline;
+  padding: 0 10px;
+}
+
+#main-menu .nav-bar li a {
+  border: 1px #ccc solid;
+  padding: 0.5em;
+  border-radius: 50px;
+  color: brown;
+  background: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font: weight 500px;
+  transition: background 1000ms ease;
+}
+
+#main-menu .nav-bar li a:hover {
+  background-color: skyblue;
+  color: red;
+}
+
+#fix {
+  position: fixed;
+  margin: -40px;
+  top: 80px;
+  font: weight 500px;
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  color: #007bff;
+}
+
+.section__title--portfolio {
+  color: rgb(255, 0, 13);
+  position: relative;
+  text-align: center;
+  font-size: var(--fs-h2);
+}
+
+.my-work {
+  background-color: brown;
+  color: var(--clr-light);
+  text-align: center;
+  padding: 1em 1em;
+  margin-top: 2rem;
+}
+
+#wedding {
+  margin-top: -380px;
+  position: absolute;
+  margin-left: 7%;
+  color: #007bff;
+  font-family: "Sacramento", cursive;
+}
+
+#family {
+  margin-top: -380px;
+  position: absolute;
+  margin-left: 8%;
+  color: #007bff;
+  font-family: "Sacramento", cursive;
+}
+
+#portrait {
+  margin-top: -380px;
+  position: absolute;
+  margin-left: 7%;
+  color: #007bff;
+  font-family: "Sacramento", cursive;
+}
+
+.portfolio {
+  display: inline-block;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.portfolio {
+  background-color: var(--clr-light);
+  overflow: hidden;
+}
+
+.portfolio__item {
+  background: var(--clr-light);
+  overflow: hidden;
+}
+
+.portfolio__img {
+  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+}
+
+.portfolio__item:focus {
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio__img:hover,
+.portfolio__item:focus .portfolio__img {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+.about-me {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-me__img {
+  box-shadow: var(--bs);
+}
+ 
+.services {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+
+@media (min-width: 600px) {
+.about-me {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-template-areas:
+    "title img"
+    "subtitle img"
+    "text img";
+  grid-column-gap: 2em;
+}
+
+.section__title--about {
+  grid-area: title;
+  text-align: center;
+}
+
+.section__subtitle--about {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  position: relative;
+  left: -1em;
+  width: calc(100% + 2em);
+  padding-left: 1em;
+  padding-right: calc(200px + 4em);
+  margin-top: -20px;
+  text-align: center;
+}
+
+.about-me__img {
+  grid-area: img;
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 100px;
+}
+
+#formdiv {
+  width: 70%;
+  float: left;
+  border: 2px solid brown;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+#addressDiv {
+  width: 26%;
+  float: left;
+  margin-top: 90px;
+  border: 2px solid brown;
+  padding: 5px;
+}
+
+.myForm {
+  padding: 20px;
+}
+
+.myForm label {
+  display: block;
+}
+
+.myForm input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  width: 90%;
+  padding: 5px;
+}
+
+#formdiv,
+#addressDiv {
+  width: 100%;
+  float: none;
+  border: 2px solid brown;
+  padding: 5px;
+}
+
+.btn1 {
+  display: inline-block;
+  padding: 0.5em 2.5em;
+  background: brown;
+  color: var(--clr-light);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+}
+
+.footer {
+  background: brown;
+  color: #007bff;
+  text-align: center;
+  padding: 0.5em 0;
+  font-size: var(--fs-h3);
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__link {
+  font-weight: absolute;
+}
+
+.footer__link:hover,
+.social-list__link:hover {
+  opacity: 0.7;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 0;
+  padding: 0;
+}
+
+.social-list__item {
+  margin: 0 0.5em;
+}
+
+.social-list__link {
+  padding: 0.5em;
+}
